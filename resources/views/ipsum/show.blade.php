@@ -6,7 +6,7 @@
 
 @section('content')
         <h1> Geneating {{ $paragraphs }} paragraphs of Lorem Ipsum</h1>
-        <br><br>
+        <hr>
 
         {!! lorem($paragraphs) !!}
 

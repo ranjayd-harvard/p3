@@ -39,7 +39,7 @@ html, body {
 .links > a {
     color: #636b6f;
     padding: 0 25px;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
@@ -47,10 +47,33 @@ html, body {
 }
 
 .m-b-md {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .btn-bold-big {
   font-size: 32px;
   font-weight: bold;
+}
+
+.btn-bold-big {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.projectDiv {
+    padding: 5px 15px;
+}
+
+
+.formBg {
+    background-color: #efefef;
+    border: 3px dashed #d1d1d1;
+    color: purple;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 20px 20px;
+    vertical-align: middle;
+    width: 100%;
+    word-wrap: break-word;
 }

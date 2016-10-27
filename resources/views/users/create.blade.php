@@ -8,7 +8,7 @@
 @section('content')
     <form method='POST' action='/users'>
 
-
+      <div class="formBg">
         {{ csrf_field() }}
 
         <label>How many users? (Max:99)</label><br>
@@ -28,11 +28,11 @@
           <input type="checkbox" name="profile_pic"  checked="checked">
 <br>
         <input class="btn btn-primary btn-bold-big" type='submit' value='Generate Users'>
-
+      </div>
 
     </form>
 
-<br><br>
+<hr>
 <h3>Generated data for <strong>{{ session('users',$users) }}</strong> users</h3>
 
 @if(!empty (session('data',$data)))

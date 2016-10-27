@@ -42,9 +42,8 @@
                                       In publishing and graphic design, lorem ipsum is a placeholder text commonly used to demonstrate the graphic elements of a document or visual presentation. By replacing the distraction of meaningful content with filler text of scrambled Latin it allows viewers to focus on graphical elements such as font, typography, and layout.
                                 </p>
 
-
-                                                                The package used for this generator is provided by
-                                                                <a target='_blank' href="http://www.danieleckermann.com/blog/even-simpler-lorem-ipsum-laravel">Daniel Eckermann
+                                    The package used for this generator is provided by
+                                    <a target='_blank' href="http://www.danieleckermann.com/blog/even-simpler-lorem-ipsum-laravel">Daniel Eckermann
                                 </a>
                             </div>
                         </div>

@@ -7,6 +7,7 @@
 @section('content')
     <form method='POST' action='/ipsum'>
 
+      <div class="formBg">
         {{ csrf_field() }}
 
         <label>How many paragraphs of text you need to generate?</label><br>
@@ -17,11 +18,13 @@
           <br><br>
         <input class="btn btn-primary btn-bold-big" type='submit' value='Generate Text'>
 
-
+      </div>
     </form>
+<hr>
+<h2>Sample text:</h2>
 
-<br><br>
-<h3>Sample text:</h3>
-<br><br>
+<br>
     {!! lorem($paragraphs) !!}
+
+    <hr>
 @endsection
