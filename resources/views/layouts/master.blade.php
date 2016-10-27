@@ -80,10 +80,10 @@
       <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <section>
+
                     {{-- Main page content will be yielded here --}}
                     @yield('content')
-                </section>
+  
               </div>
         </div>
       </div>
