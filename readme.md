@@ -1,27 +1,24 @@
-# Laravel PHP Framework
+# p3 project
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This is the third project(p3) for the dwa15 class. This project is a single-page web application built using the LAMP stack.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+The main goal of this project is to generate a random password based on user inputs. The users can specify:
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+* number of words in password
+* words separator
+* words complexities like whether it needs (and they appended to the password string)
+  - numbers or
+  - other special characters in the password.
+* case for the password ( upperCase, lowerCase and camelCase supported currently.)
 
-## Official Documentation
+Upon Submission of the form it generates and displays the password.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+It is built per the instructions of the demo ( http://dwa15.com/Projects.../P3).
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Project Details:
+* The source of the password words is fed thru file. The file is called words.txt and it exists in the root of the project
+* Bootstrap grid template is used for the layout
+* very light javascript and CSS is also used to make the page look clean
+* For the layout of the page, i have used the bootstrap grid technique ( more details on this https://getbootstrap.com/examples/grid/ )
+* Demo url for this project is: http://p3.ranjayd.me
+* Link to the Video: https://www.youtube.com/watch?v=-zx9FxN_oWQ
