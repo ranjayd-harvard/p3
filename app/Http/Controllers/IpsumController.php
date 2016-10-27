@@ -28,7 +28,7 @@ class IpsumController extends Controller
   {
       # Validate
       $this->validate($request, [
-          'num_paragraphs' => 'required|integer',
+          'num_paragraphs' => 'required|integer|min:0|max:99',
       ]);
       # If there were errors, Laravel will redirect the
       # user back to the page that submitted this request

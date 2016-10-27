@@ -8,9 +8,6 @@
 @section('content')
     <form method='POST' action='/users'>
 
-      {{ str_random(40) }}
-
-      <br>
 
         {{ csrf_field() }}
 
@@ -22,21 +19,21 @@
           <br><br>
 
           <label>Date of Birth: </label>
-          <input checked="checked" name="DOB" type="checkbox" value="1">
-<br><br>
+          <input type="checkbox" name="dob" checked="checked">
+<br>
           <label>Profile: </label>
-          <input checked="checked" name="profile" type="checkbox" value="1">
-<br><br>
+          <input type="checkbox" name="profile"  checked="checked">
+<br>
           <label>Profile Picture: </label>
-          <input checked="checked" name="profile_pic" type="checkbox" value="1">
-<br><br>
+          <input type="checkbox" name="profile_pic"  checked="checked">
+<br>
         <input class="btn btn-primary btn-bold-big" type='submit' value='Generate Users'>
 
 
     </form>
 
 <br><br>
-<h3>Input Entered: {{ session('users',$users) }}</h3>
+<h3>Generated data for <strong>{{ session('users',$users) }}</strong> users</h3>
 
 @if(!empty (session('data',$data)))
   @foreach (session('data',$data) as $key => $value)

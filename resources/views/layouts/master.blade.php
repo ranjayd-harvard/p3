@@ -76,8 +76,8 @@
             <div class="row">
                 <div class="col-md-12">
             &copy; {{ date('Y') }} &nbsp;&nbsp;
-            <a href='https://github.com/susanBuck/foobooks' target='_blank'><i class='fa fa-github'></i> View on Github</a> &nbsp;&nbsp;
-            <a href='http://foobooks.dwa15-practice.biz/' target='_blank'><i class='fa fa-link'></i> View Live</a>
+            <a href='https://github.com/ranjayd-harvard/p3' target='_blank'><i class='fa fa-github'></i> View on Github</a> &nbsp;&nbsp;
+            <a href='http://p3.ranjayd.me/' target='_blank'><i class='fa fa-link'></i> View Live</a>
           </div>
         </div>
       </div>

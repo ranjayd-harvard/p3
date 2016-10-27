@@ -30,18 +30,6 @@ class UserController extends Controller
           array_push( $array, $tmp);
       }
 
-      //$request = \App::make('request');
-      //$request->session()->put('users', 1);
-      //$request->session()->put('data', $array);
-
-      //$request->session()->flash('users', 1);
-      //request->session()->flash('data', $array);
-
-
-      //session(['users' => '1']);
-      //session(['data' => $array]);
-
-      #dd(session('data'));
         return view('users.create')->with('users', 1)->with('data',$array);
     }
     /**
@@ -56,20 +44,25 @@ class UserController extends Controller
         $this->validate($request, [
             'num_users' => 'required|integer|min:0|max:99',
         ]);
-        # If there were errors, Laravel will redirect the
-        # user back to the page that submitted this request
-        # If there were NO errors, the script will continue...
-        # Get the data from the form
-        #$title = $_POST['title']; # Option 1) Old way, don't do this.
+
+        $display_array = array('name');
+
+        if ( $request->has('dob') ) {
+          array_push($display_array, 'dob');
+        }
+        if ( $request->has('profile') ) {
+          array_push($display_array, 'profile');
+        }
+        if ( $request->has('profile_pic') ) {
+          array_push($display_array, 'profile_pic');
+        }
+
+        #dd($request->input());
+
+        #dd($display_array);
+
         $num1 = $request->input('num_users');
 
-
-
-
-        #$array = array_add(['name' => 'Ranjay'] , 'DOB',  "11-11-2016");
-
-
-        //$newCollection = collect([1, 2, 3, 4, 5]);
         $array = array();
 
         for ($k = 0 ; $k < $num1; $k++){
@@ -79,16 +72,21 @@ class UserController extends Controller
                           'dob' => $string,
                           'profile' => 1,
                           'profile_pic' => 'profile_picture');
+
+
+              #$tmp = array_only( $tmp, [ 'name', 'profile', 'profile_pic']);
+
+              $tmp = array_only( $tmp, $display_array);
+
             array_push( $array, $tmp);
         }
 
-        #dd($array);
-
-        #return \Redirect::to('/ipsum/create')->withInput()->with(['paragraphs',$num1]);
 
 
 
-        return redirect('/users/create')->with('users', $num1)->with('data',$array);
+        //return redirect('/users/create')->with('users', $num1)->with('data',$array);
+
+        return redirect()->back()->with('users', $num1)->with('data',$array)->withInput();
         //return view('users.create')->with('users',$num1)->with('data', $array);
 
     }

@@ -5,7 +5,7 @@
 @section ('page-header', 'Generated text ')
 
 @section('content')
-        <h1> Geneating {{ $paragraphs }} of Lorem Ipsum</h1>
+        <h1> Geneating {{ $paragraphs }} paragraphs of Lorem Ipsum</h1>
         <br><br>
 
         {!! lorem($paragraphs) !!}
