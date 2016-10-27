@@ -47,7 +47,7 @@ html, body {
 }
 
 .m-b-md {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .btn-bold-big {
@@ -76,4 +76,10 @@ html, body {
     vertical-align: middle;
     width: 100%;
     word-wrap: break-word;
+}
+
+.colPadding {
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-bottom: 1px solid #666;
 }

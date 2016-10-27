@@ -16,7 +16,7 @@
           @if($errors->has('num_users'))
           <span class="label label-danger">{{ $errors->first('num_users') }}</span>
           @endif
-          <br><br>
+          <br>
 
           <label>Date of Birth: </label>
           <input type="checkbox" name="dob" checked="checked">
@@ -37,6 +37,9 @@
 
 @if(!empty (session('data',$data)))
   @foreach (session('data',$data) as $key => $value)
+
+    <div class="row">
+      <div class="col-md-12 colPadding">
       @foreach ($value as $key1 => $value1)
       @if($key1 == 'profile')
         {!! lorem(1) !!}
@@ -45,12 +48,15 @@
               <!-- Returns an image (1024x1024) -->
               {!! lorem()->image(200, 180, ['class' => 'img-responsive']) !!}
           </div>
+      @elseif ( $key1 == 'name')
+       <strong>{{$value1}}</strong>
       @else
-        {{$value1}} <br/>
+        {{$value1}}
       @endif
+      <br/>
 
       @endforeach
-      <br/>
+      </div></div>
   @endforeach
 @endif
 <br><br>
