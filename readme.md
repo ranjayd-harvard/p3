@@ -14,4 +14,4 @@ Project Details:
 * very light javascript and CSS is also used to make the page look clean
 * For the layout of the page, i have used the bootstrap grid technique ( more details on this https://getbootstrap.com/examples/grid/ )
 * Demo url for this project is: http://p3.ranjayd.me
-* Link to the Video: https://www.youtube.com/watch?v=-zx9FxN_oWQ
+* Link to the Video: https://youtu.be/vYYudsBOYrI
