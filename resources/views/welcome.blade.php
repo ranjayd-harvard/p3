@@ -4,6 +4,7 @@
 @section ('page-header', 'Developers Best Friend ')
 
 @section('content')
+<h3>Thanks for visiting!</h3>
         <div>
 
             <div class="content">
